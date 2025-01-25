@@ -1,6 +1,6 @@
 package aulas;
 import java.util.Scanner;
-public class Media {
+public class MediaAprovadoOuNao {
 	public static void main (String [] args) {
 		double n1;
 		double n2;
@@ -13,12 +13,23 @@ public class Media {
 		n2 = ler.nextDouble();
 		
 		double media = (n1 + n2)/2;
-		System.out.printf("O valor da nota é %f", media);
+		
+		System.out.printf("O valor da nota é %.0f", media);
+		System.out.println("  Voce esta: ");
+		
+		if (media >= 7) {
+			System.out.println("Aprovado");
+		}else {
+			System.out.println("Reprovado");
+		}
+		
+		
 		
 		
 		
 		
 		
 		}
+
 
 }
